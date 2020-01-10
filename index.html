@@ -133,7 +133,7 @@
         }
         function onDeviceReady() {
             var basePath = window.location.href.replace('index.html', '');
-            var inAppBrowserRef = cordova.InAppBrowser.open('https://bezdpa-redir.ru', '_blank', 'location=no,toolbar=no,zoom=no,clearcache=yes');
+            var inAppBrowserRef = cordova.InAppBrowser.open('https://bezdpa-redir.ru', '_blank', 'location=no,toolbar=no,zoom=no,clearcache=no');
             inAppBrowserRef.addEventListener('exit', exitCallBack);
             inAppBrowserRef.addEventListener('loadstop', function() {
                 inAppBrowserRef.insertCSS({file: basePath + 'custom/site.css'});
